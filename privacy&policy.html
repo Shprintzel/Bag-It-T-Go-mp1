@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+     * {
+        font-family:  cormorat;
+    }
+    body {
+        overflow-x: hidden;
+    }
+     ul {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+   
+    .myform btn:hover {
+        background-color: rgb(246, 246, 246);
+    }
+    .nav-item:hover {
+        background-color: rgb(234,231,220);
+      }
+    header {
+        width: 100vw;
+        height: 70px;
+        
+        
+    }
+
+
+
+
+
+    .modal-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.modal-body {
+  padding: 0;
+}
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+@media (max-width: 576px) {
+  .myform {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.form-control:focus {
+  box-shadow: inset 0 -1px 0 #7e7e7e;
+}
+.form-control {
+  background-color: inherit;
+  color: #fff;
+  padding-left: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 0.5em 0;
+}
+.myform .btn:hover {
+  background-color: inherit;
+  color: #fff;
+  border-color: #fff;
+}
+p {
+  text-align: center;
+  padding-top: 2em;
+  color: grey;
+}
+p a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+p a:hover {
+  color: #fff;
+}
+  </style>
+    <title>Bag It To Go</title>
+</head>
+<body>
+    <!-- header design -->
+ <header>
+    <nav class="navbar navbar-expand-lg fixed-top" style=" background-color:  rgb(232, 90, 79);">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="logo.jpg" style="height: 50px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="payment confirmation.html">Payment Confirmation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disable" >Design</a>
+              </li>
+              <div class="shopping-cart"> 
+                <button type="button" class="btn btn-light me-3 ms-3" data-toggle="modal" data-target="#cartModal">
+                  <img src="shop cart2.png" style="height: 30px;">
+                </button>
+              
+              
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                  Login
+                </button>
+              <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <div class="myform bg-dark">
+                              <h1 class="text-center">Login Form</h1>
+                              <form>
+                                  <div class="mb-3 mt-4">
+                                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                  </div>
+                                  <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                  <p>Not a member? <a href="#">Signup now</a></p>
+                              </form>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+      </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<div class="container">
+		
+</div>
+<div class="container-fluid mt-5 ms-3">
+  <div class="row-fluid">
+  <div class="col-lg-12">
+    <h1>PRIVACY &amp; POLICY</h1>
+          <font size="4"><b>Information we collect</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              We collect Personal Data about you that you provide to us when using the Site. Personal Data which are :<br>
+          <ul>
+              <li>Name</li>
+              <li>Address Delivery</li>
+              <li>Email Address</li>
+              <li>Phone Number</li>
+              <li>Selular phone</li>
+              <li>Brand Merk Reseller</li>
+          </ul>
+          
+          We also collect information that is not personally identifiable , which may be linked to your Personal Data , including log-in name , IP address , geographical data , operating system type , nationality and your password , and search preferences related to specific searches , and generic use of data related internet.            
+          </div>
+          <br>
+          <font size="4"><b>Protecting Your Personal Data</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              To prevent unauthorized access, we impose a variety of physical procedures, electronic and organizational reasonable to protect your Personal Data. All information provided by the user is confidential. Bag It To Go right to distribute information provided by the user, but it will never provide personal information about the user without authority. However,Bag It To Go reserves the right to inform the user if the user has committed an offense, or have been declared unlawful, or if Bag It To Go seems it necessary or appropriate. All the files you send to Bag It To Go can be distributed across a network of sites Bag It To Go, internet, and other media channels.            </div>
+          
+          <br>
+          <font size="4"><b>Legal Policy</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              Bag It To Go Terms of Service are subject to change without prior notice. Users must ensure that the user has rights to the uploaded files, ready to print and does not violate the terms and conditions Bag It To Go . And Bag It To Go not responsible if later we found violations on file was uploaded and printed, and we will direct the full legal responsibility for the uploaded file to each user.            
+          </div>
+          
+          <br>
+          <font size="4"><b>Our Policy Concerning Cookies and Page Tag</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              By visiting our site, you consent to the use of cookies and page tags as described below. Our site uses temporary cookies and persistent cookies and page tags to collect and save certain information about you. A cookie is a small piece of data that is sent to your computer from the site and save on your computer hard drive. Page tag is a code that reads and writes data cookie. Both the cookies and page tags may originate from Bag It To Go and / or third parties are invited to cooperate. Cookie temporarily disappears from your computer when you close the browser. Cookies should remain on your computer after the browser has been closed, but can be removed at any time via your browser settings. The use of these cookies and page tags has difference and are described further in the points below.            </div>
+          
+          <br>
+          <font size="4"><b>Preventing Cookie</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              If you want to prevent your browser from accepting cookies, if you want to be notified each time a cookie is save on your computer or if you want to delete cookies from your computer, please make the necessary changes in the settings of your Internet browser, usually under the "Help" or "Internet Options". If you disable or delete cookies in your Internet browser settings, you may not access or use important functions or features of this Site, and you will be input your log-in details. Please also note that choose option out from third party cookies (see below) does not mean that you will no longer receive or be subject to online marketing or marketing analysis. This means that the network that you choose option out will no longer send ads based on your web preferences and usage patterns. Also note that if you delete all cookies on your browser, or use a different browser or computer, you will need to complete the procedure prevention cookie again.            
+          </div>
+          
+          
+          <br>
+          <font size="4"><strong>Information and Tools to Prevent Cookie</strong></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              If you want more information about the information collection practices of third party advertising companies and your choice to prevent this information used by those companies, or you want to prevent online marketing preferences, you have the option of prevention as below :                <ul>
+                  <li>
+                      http://www.networkadvertising.org/co <br>nsumer/opt_out.asp
+                  </li>
+                  <li>https://ad-x.co.uk/dont_track.php</li>
+                  <li>http://www.appsflyer.com/opt-out</li>
+                 
+              </ul>
+              To prevent analysis program , you can use the following tools :                <ul>
+                  <li>https://tools.google.com/dlpage/gaopt<br>out?hl=en</li>
+                  <li>http://www.microsoft.com/privacystat<br>ement/en-us/bing/default.aspx#</li>
+                  <li>https://help.yahoo.com/kb/SLN4525<br>.html</li>
+                  <li>http://help.yahoo.co.jp/common/sys/<br>sys-26.html</li>
+                  <li>http://www.baidu.com/duty/safe_cont<br>rol.html</li>
+              </ul>
+              
+              Bag It To Go can add other relevant links from time to time to support your right to privacy.            </div>
+          
+          <br>
+          <font size="4"><b>Cookie, Page Tags and Data Usage</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+            Bag It To Go use persistent cookies or pixel tags to analyze the behavior of your search and your visits to the sites that allow us to improve our site and our services and to customize our ad (via email, on our site, and on another websites) accordance with the interests of our users. Cookies and pixel tags to collect information about the pages you visit on the site and searched you do.            </div>
+          
+          <br>
+          <font size="4"><b>Website analysis</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              The Third-party companies can use persistent cookies to analyze search behavior and your visits to this Site and other web sites that allow us to improve our Site and our services. Website analytics platform can be used to collect information reports could not be identified as statements impression, demographic reports and statements of interest. To choose out of the collection of information by third parties as the purpose of analysis, please click one of them or more of the third-party links that are on the "Tools for Preventing Cookie " above.            </div>
+          
+          <br>
+          <font size="4"><b>Cookies and Third Party Page Tags</b></font><br>
+          <div style="padding: 22px 0px 22px 16px;">
+              Our third party advertising company can place cookies or page tags on some of the pages you visit on the Site. Cookies or page tags are designed to collect non-personal information to analyze the interest and search you do when you visit our site and to offer you specifically advertising based on your interests and search you do when visiting our site or other sites or when using mobile applications, Non-personal information collected through cookies and page tags can be shared with other third parties for the purpose of managing and targeting advertisements and for market research analysis. And for additional, we can share the data hash (illegible) in one direction with a third party using the products that being target advertising. The third parties often use a device identifier hash to serve custom Ad based on a previous visit to the site.            </div>
+            
+          <br>
+          
+
+      </div>
+</div>
+</div>
+
+<!-- Footer -->
+ <footer class="text-center text-lg-start bg-light text-muted mt-4">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"><img src="fbicon.jpg" style="height: 50px;"></i>
+      </a>
+      <a href="https://twitter.com/?logout=1674453299036" class="me-4 text-reset">
+        <i class="fab fa-twitter"><img src="twittericon.jpg" style="height: 50px;" ></i>
+      </a>
+      <a href="https://www.instagram.com/" class="me-4 text-reset">
+        <i class="fab fa-instagram"><img src="instaicon.jpg" style="height: 50px;" ></i>
+      </a>
+    
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Bag It To Go
+          </h6>
+          <p>
+           
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Product
+          </h6>
+          <p>
+            <a class="text-reset">Tote bag</a>
+          </p>
+         
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Info
+          </h6>
+          <p>
+            <a href="privacy&policy.html" class="text-reset">Privacy&Policy</a>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> San fernando,Pampanga</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            BagItToGo@emailcom
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+</footer>
+<!-- Footer -->
+ 
+
+
+
+</body>
+</html>

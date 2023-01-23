@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+* {
+        font-family: cormorat;
+    }
+    body {
+        overflow-x: hidden;
+    }
+     ul {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+   
+    .myform button:hover {
+        background-color: rgb(246, 246, 246);
+    }
+    .nav-item:hover {
+        background-color: rgb(234,231,220);
+      }
+    header {
+        width: 100vw;
+        height: 70px;
+        
+        
+    }
+
+
+    
+    </style>
+    <title>Bag It To Go</title>
+</head>
+<body>
+    
+    <!-- header design -->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top" style=" background-color:  rgb(232, 90, 79);">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="logo.jpg" style="height: 50px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="payment confirmation.html">Payment Confirmation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disable">Design</a>
+              </li>
+              <div class="shopping-cart">
+                <button type="button" class="btn btn-light me-3 ms-3" data-toggle="modal" data-target="#cartModal">
+                  <img src="shop cart2.png" style="height: 30px;">
+                </button>
+
+
+                
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+          </div>
+  
+        </div>
+      </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+
+
+
+
+
+
+    <div class="container ">
+        <div class="row margin-auto pt-4" id="banner-home-h1">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 text-center">
+            <h1>Payment Confirmation</h1>
+        </div>
+        </div>
+        
+        <form id="paymen-confirmation-form" action="/payment/index" method="post">
+    <input type="hidden" name="_csrf-frontend" value="IusIGR5h1xzRae5nqJSQKmORd-ePxdTTvhc8L-0E-EN1uEdqKCOBVrRQiSyF8aJmDsQP1P6XtqKTQREClV2wNw==">    <div class="col-md-6 col-md-offset-2">
+            <div class="row">
+                <div class="col-md-4 text-right">
+                    <label>No. Order</label>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group field-payment-typeorder required">
+    
+    <select id="payment-typeorder" class="form-control" name="Payment[TypeOrder]" aria-required="true">
+    <option value="">Select...</option>
+    <option value="D">Sticker (D)</option>
+    <option value="E">Print Fabric (E)</option>
+    </select>
+    
+    <p class="help-block help-block-error"></p>
+    </div>                <div class="form-group field-payment-idorder required">
+    
+    <input type="text" id="payment-idorder" class="form-control" name="Payment[IdOrder]" autofocus="" aria-required="true">
+    
+    <p class="help-block help-block-error"></p>
+    </div>                <label style="color:#645353">Note: Type numbers only</label>
+                </div>
+            </div>
+            
+        <div class="row">
+                <div class="col-md-4 text-right">
+                    <label>Payment Method</label>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group field-payment-paymentmethod required">
+    
+    <select id="payment-paymentmethod" class="form-control" name="Payment[PaymentMethod]" aria-required="true">
+    <option value="">Please select</option>
+    <option value="ATM Transfer">ATM Transfer</option>
+    <option value="Internet Banking">Internet Banking</option>
+    <option value="Paypal">Paypal</option>
+    </select>
+    
+    <p class="help-block help-block-error"></p>
+    </div>            </div>
+            </div>
+            
+            <!--<div class="row">
+                <div class="col-md-offset-4 col-md-8">
+                    <div class="form-group">
+                        
+                    </div>
+                </div>
+            </div>-->
+        <div class="row paypal">
+                <div class="col-md-4 text-right">
+                    <label>Payment To</label>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group field-payment-paymentdestination">
+    
+    <select id="payment-paymentdestination" class="form-control" name="Payment[PaymentDestination]">
+    <option value="">Please select</option>
+    <option value="CUSTOMPH DIGITAL PRINTING SERVICES - 0036 2009 9868">Bag It To Go DIGITAL PRINTING SERVICES - 0036 2009 9868</option>
+    </select>
+    
+    <p class="help-block help-block-error"></p>
+    </div>            </div>
+            </div>
+        <div class="row paypal">
+                <div class="col-md-4 text-right">
+                    <label>Date of Payment</label>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group field-payment-datetransaction">
+    
+    <input type="text" id="payment-datetransaction" class="form-control hasDatepicker" name="Payment[DateTransaction]">
+    
+    
+    <p class="help-block help-block-error"></p>
+    </div>            </div>
+            </div>
+        <div class="row paypal">
+                <div class="col-md-4 text-right">
+                    <label>Total Payment</label>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group field-payment-amount">
+    
+    <input type="text" id="payment-amount" class="form-control" name="Payment[Amount]" autofocus="">
+    
+    <p class="help-block help-block-error"></p>
+    </div>            </div>
+            </div>
+            <div class="row paypal">
+                <div class="col-md-4 text-right">
+                    <label>Remark</label>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group field-payment-remark">
+    
+    <textarea id="payment-remark" class="form-control" name="Payment[Remark]" rows="3" cols="5"></textarea>
+    
+    <p class="help-block help-block-error"></p>
+    </div>            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-right">
+                    <label></label>
+                </div>
+                <div class="col-md-8">
+                    
+    
+                    <div class="form-group field-payment-recaptcha required">
+
+                        <input type="hidden" id="payment-recaptcha" class="form-control" name="Payment[reCaptcha]" aria-required="true"><div id="payment-recaptcha-recaptcha-paymen-confirmation-form" class="g-recaptcha" data-sitekey="6LdCAdwUAAAAAMlgmj8g1N99FIP2tPEOIZVxd0ix" data-input-id="payment-recaptcha" data-form-id="paymen-confirmation-form"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LdCAdwUAAAAAMlgmj8g1N99FIP2tPEOIZVxd0ix&amp;co=aHR0cHM6Ly9jdXN0b20ucGg6NDQz&amp;hl=en&amp;v=Gg72x2_SHmxi8X0BLo33HMpr&amp;size=normal&amp;cb=ub405ekw7p62" width="304" height="78" role="presentation" name="a-1kmi3hpupnv8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                        
+                        
+    <p class="help-block help-block-error"></p>
+    </div>            </div>
+            </div>
+            
+        </div>
+        <div class="col-md-12 center" > 
+            <button type="submit" class="btn btn-primary btn-lg col-lg-offset-6 col-lg-2"  name="confirmation-button">Confirm</button>   </div>
+        </form>    
+    </div>
+
+
+
+
+     <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"><img src="fbicon.jpg" style="height: 50px;"></i>
+        </a>
+        <a href="https://twitter.com/?logout=1674453299036" class="me-4 text-reset">
+          <i class="fab fa-twitter"><img src="twittericon.jpg" style="height: 50px;" ></i>
+        </a>
+        <a href="https://www.instagram.com/" class="me-4 text-reset">
+          <i class="fab fa-instagram"><img src="instaicon.jpg" style="height: 50px;" ></i>
+        </a>
+      
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Bag It To Go
+            </h6>
+            <p>
+             
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Product
+            </h6>
+            <p>
+              <a class="text-reset">Tote bag</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Info
+            </h6>
+            <p>
+              <a href="privacy&policy.html" class="text-reset">Privacy&Policy</a>
+            </p>
+            
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> San fernando,Pampanga</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              BagItToGo@emailcom
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+</footer>
+ <!-- Footer -->
+   
+
+</body>
+</html>
